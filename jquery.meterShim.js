@@ -94,21 +94,3 @@ jQuery.fn.meterShim = function() {
 
 // checks and adds support
 jQuery.fn.meterShim.supportsMeter = "value" in document.createElement('meter');
-
-/*
-// for normal stuff
-$(document).ready(function() {
-    $("meter").fakeMeter()
-})
-
-// for ajaxy stuff
-$.get("/my/fancy/meter", function(html) {
-	var $awesomeerHtml = $(html).find("meter").fakeMeter()
-	$(body).html($awesomeerHtml)
-})
-
-$.get("/my/fancy/meter", function(html) {
-	$(body).html(html)
-    $("meter").fakeMeter()
-})
-*/
