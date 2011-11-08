@@ -1,0 +1,21 @@
+HTML5 METER SHIM
+By Jamund Feguson (@xjamundx)
+And Rob Middleton (@rob__ot)
+Mostly stolen from: https://gist.github.com/667320
+
+Usage:
+
+    // for normal stuff
+    $(document).ready(function() {
+        $("meter").meterShim()
+    })
+
+	// for ajax requets
+    $.get("/my/fancy/meter", function(meterHtml) {
+	    $(body).append(meterHtml)
+	    
+		// this is the only way it would work for me, bah
+	    setTimeout(function() {
+	        $("meter").meterShim()    
+	    }, 0)
+    })
