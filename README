@@ -3,6 +3,9 @@ By Jamund Feguson (@xjamundx)
 And Rob Middleton (@rob__ot)
 Mostly stolen from: https://gist.github.com/667320
 
+Dependencies:
+ - jQuery
+
 Usage:
 
     // for normal stuff
